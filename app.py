@@ -32,9 +32,17 @@ def register():
         # check if username already exists in db
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
+        print(request.form)
 
         if existing_user:
             flash("Username already exists")
+            return redirect(url_for("register"))
+        if request.form.get("password") != request.form.get("password2"):
+            flash("Passwords do not match")
+            return redirect(url_for("register"))
+
+        if len(request.form.get("password")) < 5 or len(request.form.get("password")) > 15:
+            flash("Password must be between 5 and 15 characters")
             return redirect(url_for("register"))
 
         register = {
