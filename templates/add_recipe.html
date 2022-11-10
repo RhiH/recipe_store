@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h3 class="light-blue-text text-darken-4 center-align">Add Recipe</h3>
+
+    <div class="row">
+        <form class="col s12" method="POST" action="">
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="prefix light-blue-text text-darken-4"></i>
+                    <input id="recipe_name" type="text" class="validate">
+                    <label for="recipe_name">Recipe Name:</label>
+                </div>
+                <div class="input-field col s12">
+                    <i class="prefix light-blue-text text-darken-4"></i>
+                    <input id="serves" type="text" class="validate">
+                    <label for="serves">Serves:</label>
+                </div>
+                <div class="input-field col s12">
+                    <i class="prefix light-blue-text text-darken-4"></i>
+                    <input id="cooking_time" type="time" class="validate">
+                    <label for="cooking_time">Cooking Time:</label>
+                </div>
+                <div class="input-field col s12">
+                    <i class="prefix light-blue-text text-darken-4"></i>
+                    <input id="ingredients"  class="validate">
+                    <label for="ingredients">Ingredients:</label>
+                    <textarea name="ingredients" type="list"></textarea>
+                </div>
+                <div class="input-field col s12">
+                    <i class="prefix light-blue-text text-darken-4"></i>
+                    <input id="method" class="validate">
+                    <label for="method">Method:</label>
+                    <textarea name="ingredients"type="list"></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+
+{% endblock %}
