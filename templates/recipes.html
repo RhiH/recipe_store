@@ -9,11 +9,12 @@
 {% endfor %}
 
 <div class="row">
+    {% for recipe in recipes %}
     <div class="col s12 m7">
       <div class="card">
         <div class="card-image">
           <img src="images/sample-1.jpg">
-          <span class="card-title">Card Title</span>
+          {{ recipe.recipe_name}}
         </div>
         <div class="card-content">
           <p>I am a very simple card. I am good at containing small bits of information.
@@ -24,6 +25,7 @@
         </div>
       </div>
     </div>
+    {% endfor %}
   </div>
             
 
