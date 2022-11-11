@@ -8,28 +8,30 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="prefix light-blue-text text-darken-4"></i>
-                    <input id="recipe_name" type="text" class="validate">
+                    <input id="recipe_name" name="recipe_name" type="text" class="validate" required>
                     <label for="recipe_name">Recipe Name:</label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s12">
                     <i class="prefix light-blue-text text-darken-4"></i>
-                    <input id="serves" type="text" class="validate">
+                    <input id="serves" name="serves" type="text" class="validate" required>
                     <label for="serves">Serves:</label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s12">
                     <i class="prefix light-blue-text text-darken-4"></i>
-                    <input id="cooking_time" type="time" class="validate">
+                    <input id="cooking_time" name="cooking_time" type="time" class="validate" required>
                     <label for="cooking_time">Cooking Time:</label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s12">
                         <i class="prefix light-blue-text text-darken-4"></i>
-                        <input id="ingredients" textarea id="ingredients" class="materialize-textarea validate"></textarea>
+                        <input id="ingredients" name="ingredients" minlength="5" 
+                                maxlength="500" textarea id="ingredients" class="materialize-textarea validate" 
+                                required></textarea>
                         <label for="ingredients">Ingredients:</label>
                     </div>
                 </div>
@@ -37,7 +39,9 @@
             <div class="row">
                     <div class="input-field col s12">
                         <i class="prefix light-blue-text text-darken-4"></i>
-                        <input id="method" textarea id="method" class="materialize-textarea validate"></textarea>
+                        <input id="method" name="method" minlength="5" 
+                            maxlength="1000" textarea id="method" class="materialize-textarea validate" 
+                            required></textarea>
                         <label for="method">Method:</label>
                     </div>
                 </div>
