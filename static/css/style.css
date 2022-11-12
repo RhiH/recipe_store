@@ -5,3 +5,7 @@ body {
 .btn-small {
     margin: 5px;
 }
+
+.btn-large {
+    align-items: center;
+}
