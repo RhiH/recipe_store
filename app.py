@@ -160,6 +160,7 @@ def delete_recipe(recipe_id):
     flash("Recipe Successfully Deleted")
     return redirect(url_for("get_recipes"))
 
+
 @app.route("/show_recipe/<recipe_id>", methods=["GET"])
 def show_recipe(recipe_id):
     show_recipe = {
@@ -174,7 +175,7 @@ def show_recipe(recipe_id):
         {"_id": ObjectId(recipe_id)}, show_recipe)
 
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
-    return render_template("show_recipe.html", recipe=recipe)
+    return render_template("show_recipe.html")
 
 
 if __name__ == "__main__":
