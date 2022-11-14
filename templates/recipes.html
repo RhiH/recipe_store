@@ -23,10 +23,10 @@
 {% if recipes|length > 0 %}
 <div class="row">
     {% for recipe in recipes %}
-    <div class="col s12 m7">
+    <div class="col s8 m6">
       <div class="card">
         <div class="card-image">
-          <img src="images/sample-1.jpg">
+          <img src="images/sample-1.jpg" alt="">
           <strong>{{ recipe.recipe_name}}</strong>
           <p>{{ recipe.recipe_amount }} </p>
           <p> {{ recipe.recipe_cooking_time}} </p>

@@ -1,14 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
 
-  <h3 class="light-blue-text text-darken-4 center-align">Recipe Instructions</h3>
+<h3 class="light-blue-text text-darken-4 center-align">Recipe Instructions</h3>
 
+<div class="row">
   <div class="row">
-    {% for recipe in recipes %}
-    <div class="col s12 m7">
-      <div class="card">
+    <div class="card" method="POST" action="{{ url_for('show_recipe', recipe_id=recipe._id) }}">
         <div class="card-image">
-          <img src="images/sample-1.jpg">
+          <img src="images/sample-1.jpg" alt="">
           <strong>{{ recipe.recipe_name}}</strong>
           <p>{{ recipe.recipe_amount }} </p>
           <p> {{ recipe.recipe_cooking_time}} </p>
@@ -16,7 +15,8 @@
         </div>
       </div>
     </div>
-    {% endfor %}
   </div>
+</div>
 
-      {% endblock %}
+
+{% endblock %}

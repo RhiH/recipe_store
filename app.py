@@ -161,21 +161,19 @@ def delete_recipe(recipe_id):
     return redirect(url_for("get_recipes"))
 
 
-@app.route("/show_recipe/<recipe_id>", methods=["GET"])
+@app.route("/show_recipe", methods=["GET", "POST"])
 def show_recipe(recipe_id):
-    show_recipe = {
+    if request.method == "POST":
+        recipe_method = {
             "recipe_name": request.form.get("recipe_name"),
             "serves": request.form.get("serves"),
             "cooking_time": request.form.get("cooking_time"),
             "ingredients": request.form.getlist("ingredients"),
             "method": request.form.getlist("method"),
             "created_by": session["user"]
-    }
-    mongo.db.recipes.find_one(
-        {"_id": ObjectId(recipe_id)}, show_recipe)
-
-    recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
-    return render_template("show_recipe.html")
+        }
+    recipe_method = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)}) 
+    return render_template("show_recipe.html", recipe=recipe)
 
 
 if __name__ == "__main__":
