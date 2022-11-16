@@ -18,14 +18,15 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
-
+#generate home(recipes) page
 @app.route("/")
 @app.route("/get_recipes")
 def get_recipes():
     recipes = list(mongo.db.recipes.find())
     return render_template("recipes.html", recipes=recipes)
-    
+   
 
+#generate about page
 @app.route("/about")
 def about():
     return render_template("about.html")
@@ -105,7 +106,13 @@ def profile(username):
     # grab the session user's username from db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-    return render_template("profile.html", username=username)
+    recipe = {
+        "recipe_name": request.form.get("recipe_name"),
+        "serves": request.form.get("serves"),
+        "method": request.form.getlist("method"),
+        "created_by": session["user"]
+    }
+    return render_template("profile.html", username=username, recipe=recipe)
 
     if session["user"]:
         return render_template("profile.html", username=username)
