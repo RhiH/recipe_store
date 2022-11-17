@@ -9,15 +9,19 @@
         <div class="card-image">
           <img src= {{ recipe.img }} alt="Shepherds Pie">
           <strong>{{ recipe.recipe_name}}</strong>
-          <p>{{ recipe.serves }} </p>
-          <p>{{ recipe.cooking_time}} </p>
+          <p>Serves: {{ recipe.serves }} </p>
+          <p>Cooking Time: {{ recipe.cooking_time}} </p>
           <ol>
           {% for ingredient in recipe.ingredients %}
           <li>{{ingredient}}</li>
           {% endfor %}
          </ol>
-          <p>{{ recipe.method }}</p>
-          <p>{{ recipe.created_by }}</p>
+         <ol>
+          {% for method in recipe.method %}
+          <li>{{method}}</li>
+          {% endfor %}
+         </ol>
+          <p>Uploaded by: {{ recipe.created_by }}</p>
         </div>
       </div>
     </div>
