@@ -112,7 +112,7 @@ def profile(username):
         "method": request.form.getlist("method"),
         "created_by": session["user"]
     }
-    return render_template("profile.html", username=username, recipe=recipe)
+    return render_template("profile.html", username=username, recipe=recipe, list_of_numbers=[1, 2, 3])
 
     if session["user"]:
         return render_template("profile.html", username=username)
@@ -189,6 +189,7 @@ def show_recipe(recipe_id):
 
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     return render_template("show_recipe.html", recipe=recipe)
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
