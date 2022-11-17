@@ -106,13 +106,10 @@ def profile(username):
     # grab the session user's username from db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-    recipe = {
-        "recipe_name": request.form.get("recipe_name"),
-        "serves": request.form.get("serves"),
-        "method": request.form.getlist("method"),
-        "created_by": session["user"]
-    }
-    return render_template("profile.html", username=username, recipe=recipe, list_of_numbers=[1, 2, 3])
+    recipes = mongo.db.recipes.find(
+        {'created_by': username}
+    )
+    return render_template("profile.html", username=username, recipes=recipes)
 
     if session["user"]:
         return render_template("profile.html", username=username)
@@ -189,6 +186,20 @@ def show_recipe(recipe_id):
 
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     return render_template("show_recipe.html", recipe=recipe)
+
+@app.errorhandler(404)
+def page_not_found(e):
+    """
+    On 404 error passes user to custom 404 page
+    """
+    return render_template('404.html'), 404
+
+@app.errorhandler(500)
+def internal_error(err):
+    """
+    On 500 error passes user to custom 500 page
+    """
+    return render_template('500.html'), 500
 
 
 if __name__ == "__main__":

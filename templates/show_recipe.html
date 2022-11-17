@@ -11,7 +11,11 @@
           <strong>{{ recipe.recipe_name}}</strong>
           <p>{{ recipe.serves }} </p>
           <p>{{ recipe.cooking_time}} </p>
-          <p>{{ recipe.ingredients }}</p>
+          <ol>
+          {% for ingredient in recipe.ingredients %}
+          <li>{{ingredient}}</li>
+          {% endfor %}
+         </ol>
           <p>{{ recipe.method }}</p>
           <p>{{ recipe.created_by }}</p>
         </div>

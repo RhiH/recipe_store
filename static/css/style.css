@@ -9,3 +9,10 @@ body {
 .btn-large {
     align-items: center;
 }
+
+footer {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
