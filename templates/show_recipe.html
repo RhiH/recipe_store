@@ -7,7 +7,7 @@
   <div class="row">
     <div class="card" method="POST" action="{{ url_for('show_recipe', recipe_id=recipe._id) }}">
         <div class="card-image">
-          <img src= {{ recipe.img }} alt="Shepherds Pie">
+          <img src= "{{ recipe.url_uploaded }}" alt="recipe image">
           <strong>{{ recipe.recipe_name}}</strong>
           <p>Serves: {{ recipe.serves }} </p>
           <p>Cooking Time: {{ recipe.cooking_time}} </p>
