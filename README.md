@@ -79,8 +79,10 @@ When viewed on mobile the site uses the Hamburger icon collapsible menu to allow
 
 ## Wireframes
 
-WIREFRAMES HERE
-
+![Homepage](/static/wireframes/wireframe_homepage.png)
+![Mobile](/static/wireframes/wireframe_mobile.png)
+![User_Profile](/static/wireframes/wireframe_profile.png)
+![Recipe](/static/wireframes/wireframe_recipe.png)
 
 ## Future Goals
 
