@@ -3,7 +3,7 @@
 
 # Our Recipes Store
 
-An online resource to give anyone with an interest in cooking the opportunity to find recipes, upload and edit their own recipes by registering with the site, searching recipes to find their favourites via the search engine option, and also delete their recipes shouldt he wish to do so. 
+Our Recipes Store is an online resource to give anyone with an interest in cooking the opportunity to find recipes that they know are tried and true. They are able to search the site through the search engine option and click through to the detailed ingredients and steps to create their own version. By registering, users can share their recipes, by uploading, editing and can also delete their recipes should they wish to do so. 
 
 ## Table of Contents
 
@@ -16,8 +16,6 @@ An online resource to give anyone with an interest in cooking the opportunity to
 - [Design Choices](#design-choices)
 - [Wireframes](#wireframes)
 - [Features](#features)
-
-[Existing Features]()
 
 [Future Goals](#future-goals)
 
@@ -51,21 +49,22 @@ An online resource to give anyone with an interest in cooking the opportunity to
 
 **User Goals: the main user goals are:**
 
-- Provide a space to upload a favourite recipe.
-- Ensure the user's recipes are displayed on their profile page.
-- Ensure all recipes are displayed on the home page.
-- Create a search function that allows all recipes to be searched by name.
-- Ensure each recipe has it's own page with instructions to follow.
+- Provide a space to upload a favourite recipe
+- Ensure the user's recipes are displayed on their profile page
+- Ensure all recipes are displayed on the home page
+- Create a search function that allows all recipes to be searched by name
+- Ensure each recipe has it's own page with instructions to follow
 
 ## User Stories
 
-- As a vistor to the site I would like to be able to share my favourite recipes.
-- As a vistor to the site I want to be able to view all my recipes in one place.
-- As a visitor to the site I want to be able to create, edit and delete my recipes.
-- As a visitor to the site I want to be able to see all the recipes available at a glance.
-- As a vistor to the site I want to be able to click on individual recipes without needing to log in.
-- As a visitor to the site I want to be able to see the recipes on my mobile phone.
+- As a vistor to the site I would like to be able to share my favourite recipes
+- As a vistor to the site I want to be able to view all my recipes in one place
+- As a visitor to the site I want to be able to create, edit and delete my recipes
+- As a visitor to the site I want to be able to see all the recipes available at a glance
+- As a vistor to the site I want to be able to click on individual recipes without needing to log in
+- As a visitor to the site I want to be able to see the recipes on my mobile phone
 
+---
 
 ## Design Choices
 
@@ -73,25 +72,40 @@ An online resource to give anyone with an interest in cooking the opportunity to
 
 The overall focus of the site is the recipes, and therefore styling choices were kept minimal so as not to detract from what the user is wanting to use the site for. After some experimentation with bright colours early on in the process, it was felt that keeping the background to a basic white ensured that the images of the recipes were the main attraction, and kept the uploaded recipes looking appealing to the user.
 
-The navigation elements and basic styling are based on Materialize template cards, navbar  and footer elements.
+The navigation elements and basic styling are based on Materialize template cards, navbar and footer elements.
 
 When viewed on mobile the site uses the Hamburger icon collapsible menu to allow for the navbar content to be displayed appropriately for the screen size.
 
 ## Wireframes
 
+- Our Recipes Store Desktop Homepage
+- Mobile Site
+- User Profile Page
+- Full Recipe Page
+
+
 ![Homepage](/static/wireframes/wireframe_homepage.png)
+
 ![Mobile](/static/wireframes/wireframe_mobile.png)
+
 ![User_Profile](/static/wireframes/wireframe_profile.png)
+
 ![Recipe](/static/wireframes/wireframe_recipe.png)
 
+---
 ## Future Goals
 
-- Create a wildcard 'Inspire Me!' recipe option
-- Increase the search options to allow for searching on ingredients and cooking times
-- Create a filtered search for vegan/vegetarian/main meal/dessert/short cooking times
-- Add more images for recipes during the cooking process
-- Create an option to download/send all ingredients to a shopping list
+- Increase site usage to enable the following:
+    - Consider monetizing options including range of cookware and or other cookery aids
+    - Create an option to download/send all ingredients to a shopping list via a preferred vendor
+    - Advertising on site for suitable advertisers linked to cookery 
+- Site Functionality
+    - Increase the search options to allow for searching on ingredients and cooking times
+    - Create a filtered search for vegan/vegetarian/main meal/dessert/short cooking times
+    - Add more images for recipes during the cooking process
+    - Create a wildcard 'Inspire Me!' recipe option
 
+---
 ## Technology Used
 
 ### Languages
@@ -125,27 +139,27 @@ When viewed on mobile the site uses the Hamburger icon collapsible menu to allow
 - Password must match to create user id
 - Logging in requires correct username and password
 - User's profile screen displays only their uploaded recipes
-- User is able to upload, edit and delete recipes on the respoective page
+- User is able to upload, edit and delete recipes on the respective page
 - User is able to view recipe instructions 
 - User is not able to edit or delete another user's recipes
 - User is able to log out
 - Admin is able to edit and delete recipes when logged in as admin account
 - Casual user is able to view all recipes without creating log in
-- Casual user is able to view recipe instructions without reigstering/logging in
+- Casual user is able to view recipe instructions without registering/logging in
 - Casual user is not able to add, edit or delete recipes
 - Custom pages 500 error and 404 error work as and when required
 - Footer displays on each page
 
 ### Footer
 
-- Footer links displayed for Facebook and Instagram. Both links navigate to sites. Additional code required to ensure they open in new web pages.
+- Footer links displayed for Facebook and Instagram. Both links navigate to sites. Additional code required to ensure they open in new web pages
 - Copyright is not a link and is not set to be one
 
 ### Add a Recipe
 
-- Link from navbar correctly directs logged in user to create a recipe.
-- Info required for uploading recipe info displays as required.
-- Info is sent to database on MongoDB.
+- Link from navbar correctly directs logged in user to create a recipe
+- Info required for uploading recipe info displays as required
+- Info is sent to database on MongoDB
 
 ### Edit a Recipe
 
@@ -156,13 +170,13 @@ When viewed on mobile the site uses the Hamburger icon collapsible menu to allow
 ### Delete a Recipe
 
 - Logged in user is able to see their recipes on profile and on main recipes page and can click through to edit page
-- User is able to delete recipe. 
+- User is able to delete recipe 
 - Confirmation is required to delete
 - Recipe is deleted from MongoDB and user's profile
 
 ### Recipe Instructions
 
-- All users are able to click link from mian page to view recipe instructions
+- All users are able to click link from main page to view recipe instructions
 - Large image is correctly displayed to users on navigating to page
 - Info is correctly displayed for all stages of recipe
 - Info about who uploaded the recipe is correctly displayed
@@ -174,6 +188,7 @@ When viewed on mobile the site uses the Hamburger icon collapsible menu to allow
 
 All aspects working correctly across all sized screens. Tested on Chrome and Safari.
 
+---
 ## Issues and resolutions
 
 ---
@@ -243,7 +258,7 @@ Images were sourced through Google Image search. All credits for these remain wi
 
 I couldn't have managed to get this far without the endless encourangement and assistance of my amazing mentor Richard.
 
-Inspiration for many of the recipes should go to my amazing cookery teacher Chris, without whom I would be far poorer and hungrier cook.
+Inspiration for many of the recipes should go to my amazing cookery teacher Chris, without whom I would be a far poorer and hungrier cook.
 
 
 
