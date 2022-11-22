@@ -99,10 +99,12 @@ When viewed on mobile the site uses the Hamburger icon collapsible menu to allow
     - Consider monetizing options including range of cookware and or other cookery aids
     - Create an option to download/send all ingredients to a shopping list via a preferred vendor
     - Advertising on site for suitable advertisers linked to cookery 
+
 - Site Functionality
     - Increase the search options to allow for searching on ingredients and cooking times
     - Create a filtered search for vegan/vegetarian/main meal/dessert/short cooking times
     - Add more images for recipes during the cooking process
+    - Enable users to upload own images or current url option
     - Create a wildcard 'Inspire Me!' recipe option
 
 ---
@@ -208,6 +210,10 @@ All aspects working correctly across all sized screens. Tested on Chrome and Saf
 * Cause: Limited by number of characters 
 * Resolution: Amended to textarea, with consideration that this will be amended again in the future
 ---
+* Problem: Recipe ingredients and method do not show as list with user input
+* Cause: Amendment to textarea input from above problem
+* Resolution: Textarea is stop-gap method, long term aim is to change format of card input to improve, issue to remain in short term as site does function
+---
 * Problem: User Profile not showing recipes
 * Cause: Code incorrectly written to generate info
 * Resolution: Amendment to code
@@ -259,6 +265,3 @@ Images were sourced through Google Image search. All credits for these remain wi
 I couldn't have managed to get this far without the endless encourangement and assistance of my amazing mentor Richard.
 
 Inspiration for many of the recipes should go to my amazing cookery teacher Chris, without whom I would be a far poorer and hungrier cook.
-
-
-
