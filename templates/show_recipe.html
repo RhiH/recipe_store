@@ -5,26 +5,27 @@
 
 <div class="row">
   <div class="row">
-    <div class="card" method="POST" action="{{ url_for('show_recipe', recipe_id=recipe._id) }}">
-        <div class="card-image">
-          <img src= "{{ recipe.url_uploaded }}" alt="recipe image">
-          <strong>{{ recipe.recipe_name}}</strong>
-          <p>Serves: {{ recipe.serves }} </p>
-          <p>Cooking Time: {{ recipe.cooking_time}} </p>
-          <p>Ingredients:</p>
-          <ol>
-          {% for ingredient in recipe.ingredients %}
-          <li>{{ingredient}}</li>
-          {% endfor %}
-         </ol>
-         <p>Method:</p>
-         <ol>
-          {% for method in recipe.method %}
-          <li>{{method}}</li>
-          {% endfor %}
-         </ol>
-          <p>Uploaded by: {{ recipe.created_by }}</p>
-        </div>
+    <div class="card">
+      <div method="POST" action="{{ url_for('show_recipe', recipe_id=recipe._id) }}">
+      <div class="card-image">
+        <img src= "{{ recipe.url_uploaded }}" alt="recipe image">
+        <strong>{{ recipe.recipe_name}}</strong>
+        <p>Serves: {{ recipe.serves }} </p>
+        <p>Cooking Time: {{ recipe.cooking_time}} </p>
+        <p>Ingredients:</p>
+        <ol>
+        {% for ingredient in recipe.ingredients %}
+        <li>{{ingredient}}</li>
+        {% endfor %}
+        </ol>
+        <p>Method:</p>
+        <ol>
+        {% for method in recipe.method %}
+        <li>{{method}}</li>
+        {% endfor %}
+        </ol>
+        <p>Uploaded by: {{ recipe.created_by }}</p>
+      </div>
       </div>
     </div>
   </div>
