@@ -11,14 +11,14 @@
           <strong>{{ recipe.recipe_name}}</strong>
           <p>Serves: {{ recipe.serves }} </p>
           <p>Cooking Time: {{ recipe.cooking_time}} </p>
-          <ol>
           <p>Ingredients:</p>
+          <ol>
           {% for ingredient in recipe.ingredients %}
           <li>{{ingredient}}</li>
           {% endfor %}
          </ol>
+         <p>Method</p>
          <ol>
-          <p>Method</p>
           {% for method in recipe.method %}
           <li>{{method}}</li>
           {% endfor %}
