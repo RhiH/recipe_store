@@ -10,6 +10,10 @@ body {
     align-items: center;
 }
 
+.prefix {
+    text-decoration: underline;
+}
+
 footer {
     display: flex;
     min-height: 100vh;
