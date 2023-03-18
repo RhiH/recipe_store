@@ -10,7 +10,7 @@ body {
     align-items: center;
 }
 
-.method, .ingredients, .cooking_time {
+.method .ingredients .cooking_time {
     text-decoration: underline;
 }
 
