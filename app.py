@@ -147,6 +147,12 @@ def add_recipe():
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
 
+    recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+
+    if recipe["created_by"] !=session["user"]:
+        flash("You are unable to edit this recipe")
+        return redirect(url_for("get_recipes"))
+
     if request.method == "POST":
         amend_recipe = {
             "recipe_name": request.form.get("recipe_name"),
