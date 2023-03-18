@@ -18,15 +18,17 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
-#generate home(recipes) page
+# generate home(recipes) page
+
+
 @app.route("/")
 @app.route("/get_recipes")
 def get_recipes():
     recipes = list(mongo.db.recipes.find())
     return render_template("recipes.html", recipes=recipes)
-   
 
-#generate about page
+
+# generate about page
 @app.route("/about")
 def about():
     return render_template("about.html")
@@ -54,7 +56,8 @@ def register():
             flash("Passwords do not match")
             return redirect(url_for("register"))
 
-        if len(request.form.get("password")) < 5 or len(request.form.get("password")) > 15:
+        if len(request.form.get("password")) < 5 or len(
+                request.form.get("password")) > 15:
             flash("Password must be between 5 and 15 characters")
             return redirect(url_for("register"))
 
@@ -83,11 +86,10 @@ def login():
             # ensure hashed password matches user input
             if check_password_hash(
                     existing_user["password"], request.form.get("password")):
-                        session["user"] = request.form.get("username").lower()
-                        flash("Welcome, {}".format(
-                            request.form.get("username")))
-                        return redirect(url_for(
-                            "profile", username=session["user"]))
+                session["user"] = request.form.get("username").lower()
+                flash("Welcome, {}".format(request.form.get("username")))
+                return redirect(url_for(
+                    "profile", username=session["user"]))
             else:
                 # invalid password match
                 flash("Incorrect Username and/or Password")
@@ -149,7 +151,7 @@ def edit_recipe(recipe_id):
 
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
 
-    if recipe["created_by"] !=session["user"]:
+    if recipe["created_by"] != session["user"]:
         flash("You are unable to edit this recipe")
         return redirect(url_for("get_recipes"))
 
@@ -175,7 +177,7 @@ def edit_recipe(recipe_id):
 def delete_recipe(recipe_id):
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
 
-    if recipe["created_by"] !=session["user"]:
+    if recipe["created_by"] != session["user"]:
         flash("You are unable to delete this recipe")
         return redirect(url_for("get_recipes"))
 
@@ -201,12 +203,14 @@ def show_recipe(recipe_id):
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     return render_template("show_recipe.html", recipe=recipe)
 
+
 @app.errorhandler(404)
 def page_not_found(e):
     """
     On 404 error passes user to custom 404 page
     """
     return render_template('404.html'), 404
+
 
 @app.errorhandler(500)
 def internal_error(err):
