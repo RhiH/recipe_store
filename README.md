@@ -77,7 +77,7 @@ The overall focus of the site is the recipes, and therefore styling choices were
 
 The navigation elements and basic styling are based on Materialize template cards, navbar and footer elements, brighter coliours were chosen to make them stand out more against the plain background styling.
 
-![Button](/static/wireframes/color_theme/button_theme.png)
+![Button](/static/color_theme/button_theme.png)
 
 When viewed on mobile the site uses the Hamburger icon collapsible menu to allow for the navbar content to be displayed appropriately for the screen size.
 
