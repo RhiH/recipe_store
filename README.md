@@ -38,6 +38,7 @@ Our Recipes Store is an online resource to give anyone with an interest in cooki
 
 ## UX
 
+
 ### Goals
 
 **Project Goals: the main target audience for this project is as follows:**
@@ -72,7 +73,11 @@ Our Recipes Store is an online resource to give anyone with an interest in cooki
 
 The overall focus of the site is the recipes, and therefore styling choices were kept minimal so as not to detract from what the user is wanting to use the site for. After some experimentation with bright colours early on in the process, it was felt that keeping the background to a basic white ensured that the images of the recipes were the main attraction, and kept the uploaded recipes looking appealing to the user.
 
-The navigation elements and basic styling are based on Materialize template cards, navbar and footer elements.
+![webpage](/static/color_theme/main_theme.png)
+
+The navigation elements and basic styling are based on Materialize template cards, navbar and footer elements, brighter coliours were chosen to make them stand out more against the plain background styling.
+
+![Button](/static/wireframes/color_theme/button_theme.png)
 
 When viewed on mobile the site uses the Hamburger icon collapsible menu to allow for the navbar content to be displayed appropriately for the screen size.
 
