@@ -15,9 +15,10 @@ Our Recipes Store is an online resource to give anyone with an interest in cooki
 - [User Stories](#user-stories)
 - [Design Choices](#design-choices)
 - [Wireframes](#wireframes)
-- [Features](#features)
 
-[Future Goals](#future-goals)
+[Features](#features)
+    - CurrentFeatures
+    - Future Goals
 
 [Technology Used](#technology-used)
 
@@ -56,6 +57,8 @@ Our Recipes Store is an online resource to give anyone with an interest in cooki
 - Create a search function that allows all recipes to be searched by name
 - Ensure each recipe has it's own page with instructions to follow
 
+---
+
 ## User Stories
 
 - As a vistor to the site I would like to be able to share my favourite recipes
@@ -81,6 +84,8 @@ The navigation elements and basic styling are based on Materialize template card
 
 When viewed on mobile the site uses the Hamburger icon collapsible menu to allow for the navbar content to be displayed appropriately for the screen size.
 
+---
+
 ## Wireframes
 
 - Our Recipes Store Desktop Homepage
@@ -98,7 +103,20 @@ When viewed on mobile the site uses the Hamburger icon collapsible menu to allow
 ![Recipe](/static/wireframes/wireframe_recipe.png)
 
 ---
-## Future Goals
+
+## Features
+
+**Current Features**
+
+- Users are able to view all recipes at a glance on any device 
+- Users are able to click onto each recipe and see step by step instructions to make each recipe, including cooking time and serving number
+- Users are able to create their own profile, add, amend and delete their own recipes
+- Users are not able to delete other users' recipes
+- Users are not able to amend other users' recipes
+- Users can search for recipes whether they are logged in or no
+
+---
+**Future Goals**
 
 - Increase site usage to enable the following:
     - Consider monetizing options including range of cookware and or other cookery aids
@@ -135,6 +153,8 @@ When viewed on mobile the site uses the Hamburger icon collapsible menu to allow
 
 - All pages passed HTML Verification with [W3Validator](validator.w3.org)
 - All pages passed CSS Verification with [W3Validator](jigswa.w3.org)
+
+During CSS verification, two errors occurred. These were traced to an issue with Materialize and therefore are not currently fixable unless the site is changed from using Materialize to another tool - eg Bootstrap.
 
 ## UI
 
