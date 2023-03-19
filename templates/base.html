@@ -33,9 +33,9 @@
                 {% endif %}
               </ul>
             </div>
-          </nav>
+        </nav>
           <!--mobile navbar-->
-          <ul class="sidenav" id="mobile-demo">
+        <ul class="sidenav" id="mobile-demo">
             <li><h4 class="#9e9e9e grey">Our Recipes Store</h4></li>
             <li><a href="{{ url_for('get_recipes') }}">Home</a></li>
             {% if session.user %}
@@ -47,7 +47,7 @@
             <li><a href="{{ url_for('register') }}">Register</a></li>
             <li><a href="{{ url_for('about') }}">About Us</a></li>
             {% endif %}
-          </ul>        
+        </ul>         
     </header>
 
     <div>
