@@ -254,6 +254,56 @@ All aspects working correctly across all sized screens. Tested on Chrome and Saf
 
 ## Deployment
 
+**How to the run this project locally**
+
+To run this project locally on your own IDE please follow the instructions below:
+
+The following must be installed on your machine:
+
+PIP
+Python 3.7 (or higher)
+Git
+Either a mongodb Cloud account or MongoDB running locally.
+
+**Instructions**
+
+Download a clone of the GitHub repository selecting Download Zip
+
+Open a terminal session in the unzip folder or cd to the correct location.
+
+Please note: commands may differ depending on your OS, and it may be necessary to check documentation regarding virtual environments to ensure the correct running in your own environment.
+
+A virtual environment is recommended for the Python interpreter. Enter the command:
+
+python -m venv <dir to install to e.g. .venv>
+    
+Note: Your Python command may differ, such as python3 or py
+
+Activate the .venv with the command: .venv\Scripts\activate 
+
+Ensure pip is upto date with the following command
+pip install --upgrade pip.
+Install all required modules with the command
+Pip install -r requirements.txt.
+In your local IDE create a file called env.py
+
+Inside the env.py file, create a SECRET_KEY variable and a MONGO_URI to link to your own database as per below. Please make sure to call your database our_recipe_store, with 3 collections: ingredients, recipes and users. Currently the two main collections are recipes and users, ingredients was set up in advance for future development.
+    
+In your env.py file:
+    
+import os
+
+os.environ.setdefault("IP", "0.0.0.0")
+os.environ.setdefault("PORT", "5000")
+os.environ.setdefault("SECRET_KEY", "input your secret key here")
+os.environ.setdefault("MONGO_URI", " input your uri link here ")
+os.environ.setdefault("MONGO_DBNAME", "our_recipe_store")
+    
+    
+You can now run the application with the command python app.py
+    
+**Deployment to Heroku**    
+
 This was developed using a [GitPod](https://gitpod.io/ "Link to GitPod") workspace. The code was commited to [Git](https://git-scm.com/ "Link to Git") and pushed to [GitHub](https://github.com/ "Link to GitHub") using the terminal.
 
 To deploy this page to Heroku from its GitHub repository, the following steps were taken:
