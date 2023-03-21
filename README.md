@@ -17,8 +17,8 @@ Our Recipes Store is an online resource to give anyone with an interest in cooki
 - [Wireframes](#wireframes)
 
 [Features](#features)
-    - CurrentFeatures
-    - Future Goals
+  - CurrentFeatures
+  - Future Goals
 
 [Technology Used](#technology-used)
 
@@ -260,23 +260,23 @@ To run this project locally on your own IDE please follow the instructions below
 
 The following must be installed on your machine:
 
-PIP
-Python 3.7 (or higher)
-Git
-Either a mongodb Cloud account or MongoDB running locally.
+- PIP
+- Python 3.7 (or higher)
+- Git
+- Either a mongodb Cloud account or MongoDB running locally.
 
 **Instructions**
 
-Download a clone of the GitHub repository selecting Download Zip
+* Download a clone of the GitHub repository selecting Download Zip
 
-Open a terminal session in the unzip folder or cd to the correct location.
+* Open a terminal session in the unzip folder or cd to the correct location.
 
 Please note: commands may differ depending on your OS, and it may be necessary to check documentation regarding virtual environments to ensure the correct running in your own environment.
 
 A virtual environment is recommended for the Python interpreter. Enter the command:
-
+```
 python -m venv <dir to install to e.g. .venv>
-    
+```    
 Note: Your Python command may differ, such as python3 or py
 
 Activate the .venv with the command: .venv\Scripts\activate 
