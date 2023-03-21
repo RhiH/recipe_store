@@ -17,8 +17,8 @@ Our Recipes Store is an online resource to give anyone with an interest in cooki
 - [Wireframes](#wireframes)
 
 [Features](#features)
-    - Current Features
-    - Future Goals
+   - Current Features
+   - Future Goals
 
 [Technology Used](#technology-used)
 
@@ -265,7 +265,7 @@ The following must be installed on your machine:
 - PIP
 - Python 3.7 (or higher)
 - Git
-- Either a mongodb Cloud account or MongoDB running locally.
+- Either a MongoDB Cloud account or MongoDB running locally.
 
 **Instructions**
 
@@ -294,7 +294,7 @@ Install all required modules with the command
 ```
 Pip install -r requirements.txt.
 ```
-In your local IDE create a file called env.py
+In your local IDE create a file called ```env.py```
 
 Inside the env.py file, create a SECRET_KEY variable and a MONGO_URI to link to your own database as per below. Please make sure to call your database our_recipe_store, with 3 collections: ingredients, recipes and users. Currently the two main collections are recipes and users, ingredients was set up in advance for future development.
     
@@ -322,11 +322,11 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
 
 1. Create a new app on the [Heroku website](https://dashboard.heroku.com/apps) by clicking the "New" button in your dashboard. Give it a name and set the region to Europe.
 
-2. From the heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub.
+2. From the Heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub.
 
 3. Confirm the linking of the heroku app to the correct GitHub repository.
 
-4. In the heroku dashboard for the application, click on "Settings" > "Reveal Config Vars".
+4. In the Heroku dashboard for the application, click on "Settings" > "Reveal Config Vars".
 
 5. Set the following config vars:
 
