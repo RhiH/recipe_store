@@ -21,6 +21,14 @@ Our Recipes Store is an online resource to give anyone with an interest in cooki
    - Future Goals
 
 [Technology Used](#technology-used)
+ - Languages(#languages)
+ - Tools(#tools)
+ 
+[Information Architecture)(#information-architecture)
+ 
+ - Data Storage(#data-storage)
+    - Account Data(#account-storage)
+    - Recipe Data(#recipe-storage)
 
 [Testing](#testing)
 
