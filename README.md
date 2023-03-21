@@ -17,8 +17,8 @@ Our Recipes Store is an online resource to give anyone with an interest in cooki
 - [Wireframes](#wireframes)
 
 [Features](#features)
-  - CurrentFeatures
-  - Future Goals
+    - Current Features
+    - Future Goals
 
 [Technology Used](#technology-used)
 
@@ -38,7 +38,6 @@ Our Recipes Store is an online resource to give anyone with an interest in cooki
 [Credits](#credits)
 
 ## UX
-
 
 ### Goals
 
@@ -92,7 +91,6 @@ When viewed on mobile the site uses the Hamburger icon collapsible menu to allow
 - Mobile Site
 - User Profile Page
 - Full Recipe Page
-
 
 ![Homepage](/static/wireframes/wireframe_homepage.png)
 
@@ -251,6 +249,10 @@ All aspects working correctly across all sized screens. Tested on Chrome and Saf
 * Cause: link is Null in MongoDB
 * Resolution: Amend input type to text with consideration that images maye be hosted elsewhere in future
 ---
+* Problem: Users able to delete/amend other user's recipes
+* Cause: Users able to log in by copying and pasting other user's id
+* Resolution: Functionality added to check if user attempting to access the page is the correct logged in user 
+---
 
 ## Deployment
 
@@ -271,7 +273,7 @@ The following must be installed on your machine:
 
 * Open a terminal session in the unzip folder or cd to the correct location.
 
-Please note: commands may differ depending on your OS, and it may be necessary to check documentation regarding virtual environments to ensure the correct running in your own environment.
+*Please note: commands may differ depending on your OS, and it may be necessary to check documentation regarding virtual environments to ensure the correct running in your own environment.
 
 A virtual environment is recommended for the Python interpreter. Enter the command:
 ```
@@ -279,18 +281,25 @@ python -m venv <dir to install to e.g. .venv>
 ```    
 Note: Your Python command may differ, such as python3 or py
 
-Activate the .venv with the command: .venv\Scripts\activate 
+Activate the .venv with the command:
+```
+.venv\Scripts\activate 
+```
 
 Ensure pip is upto date with the following command
+```
 pip install --upgrade pip.
+```
 Install all required modules with the command
+```
 Pip install -r requirements.txt.
+```
 In your local IDE create a file called env.py
 
 Inside the env.py file, create a SECRET_KEY variable and a MONGO_URI to link to your own database as per below. Please make sure to call your database our_recipe_store, with 3 collections: ingredients, recipes and users. Currently the two main collections are recipes and users, ingredients was set up in advance for future development.
     
 In your env.py file:
-    
+```    
 import os
 
 os.environ.setdefault("IP", "0.0.0.0")
@@ -298,9 +307,12 @@ os.environ.setdefault("PORT", "5000")
 os.environ.setdefault("SECRET_KEY", "input your secret key here")
 os.environ.setdefault("MONGO_URI", " input your uri link here ")
 os.environ.setdefault("MONGO_DBNAME", "our_recipe_store")
+ ```   
     
-    
-You can now run the application with the command python app.py
+You can now run the application with the command
+```
+python app.py
+```
     
 **Deployment to Heroku**    
 
