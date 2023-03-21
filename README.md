@@ -24,11 +24,9 @@ Our Recipes Store is an online resource to give anyone with an interest in cooki
  - Languages(#languages)
  - Tools(#tools)
  
-[Information Architecture)(#information-architecture)
- 
- - Data Storage(#data-storage)
-    - Account Data(#account-storage)
-    - Recipe Data(#recipe-storage)
+[Information Architecture](#information-architecture)
+    - Account Data
+    - Recipe Data
 
 [Testing](#testing)
 
@@ -156,8 +154,6 @@ When viewed on mobile the site uses the Hamburger icon collapsible menu to allow
 ---
 
 ## Information Architecture
-
-### Data Storage
 
 #### Account Data
 
