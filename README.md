@@ -145,6 +145,35 @@ When viewed on mobile the site uses the Hamburger icon collapsible menu to allow
 - jQuery (https://jquery.com/)
 - fontawesome (https://fontawesome.com/icons)
 
+---
+
+## Information Architecture
+
+### Data Storage
+
+#### Account Data
+
+| Title         | Key In Database | Form Validation | Data Type |
+|---------------|-----------------|-----------------|-----------|
+| Account Id    | _id             | No Validation   | ObjectId  |
+| Name          | username        | Text            | string    |
+| Password      | password        | Text            | string    |
+
+#### Recipe Data
+
+| Title                  | Key In Database        | Form Validation | Data Type |
+|------------------------|------------------------|-----------------|-----------|
+| Recipe Name            | recipe_name            | Text            | string    |
+| Cooking Time           | cooking_time           | Number(time)    | string    |
+| Created By             | created_by             | Text (username) | string    |
+| Ingredients            | ingredients            | text            | array     |
+| Serves                 | serves                 | text            | string    |
+| Method                 | method                 | text            | array     |
+| Url Image              | url_uploaded           | text            | string    |
+| Recipe Image           | recipe_img             | text            | string    |
+
+---
+
 ### Testing
 
 **Validators**
