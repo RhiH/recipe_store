@@ -10,8 +10,9 @@ Our Recipes Store is an online resource to give anyone with an interest in cooki
 [UX](#ux)
 
 [Goals](#goals)
-    - Project Goals
-    - Visitor Goals
+ - Project Goals
+ - Visitor Goals
+ 
 [User Stories](#user-stories)
 [Design Choices](#design-choices)
 [Wireframes](#wireframes)
