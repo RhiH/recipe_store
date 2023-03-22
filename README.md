@@ -322,27 +322,25 @@ The following must be installed on your machine:
 * Open a terminal session in the unzip folder or cd to the correct location.
 
 *Please note: commands may differ depending on your OS, and it may be necessary to check documentation regarding virtual environments to ensure the correct running in your own environment.
-
-A virtual environment is recommended for the Python interpreter. Enter the command:
-```
-python -m venv <dir to install to e.g. .venv>
-```    
-Note: Your Python command may differ, such as python3 or py
-
-Activate the .venv with the command:
-```
-.venv\Scripts\activate 
-```
+  
+Note: Your Python command may differ, such as python or py
 
 Ensure pip is upto date with the following command
 ```
-pip install --upgrade pip.
+pip3 install --upgrade pip.
 ```
-Install all required modules with the command
+
+Install flask
+
 ```
-Pip install -r requirements.txt.
+pip3 install flask
 ```
-In your local IDE create a file called ```env.py```
+Once flask is installed you will need to install Flask from flask, then set up your requirements.txt file
+
+```
+pip3 install -r requirements.txt.
+```
+Then create a file called ```env.py```
 
 Inside the env.py file, create a SECRET_KEY variable and a MONGO_URI to link to your own database as per below. Please make sure to call your database our_recipe_store, with 3 collections: ingredients, recipes and users. Currently the two main collections are recipes and users, ingredients was set up in advance for future development.
     
@@ -359,7 +357,7 @@ os.environ.setdefault("MONGO_DBNAME", "our_recipe_store")
     
 You can now run the application with the command
 ```
-python app.py
+python3 app.py
 ```
     
 **Deployment to Heroku**    
