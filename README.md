@@ -14,7 +14,9 @@ Our Recipes Store is an online resource to give anyone with an interest in cooki
  - Visitor Goals
  
 [User Stories](#user-stories)
+
 [Design Choices](#design-choices)
+
 [Wireframes](#wireframes)
 
 [Features](#features)
