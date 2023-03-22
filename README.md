@@ -84,9 +84,21 @@ Our Recipes Store is an online resource to give anyone with an interest in cooki
 
 The overall focus of the site is the recipes, and therefore styling choices were kept minimal so as not to detract from what the user is wanting to use the site for. After some experimentation with bright colours early on in the process, it was felt that keeping the background to a basic white ensured that the images of the recipes were the main attraction, and kept the uploaded recipes looking appealing to the user.
 
+hex code colours are as follows:
+grey: 9d9e9e
+white:ffffff
+black:212120
+
 ![webpage](/static/color_theme/main_theme.png)
 
 The navigation elements and basic styling are based on Materialize template cards, navbar and footer elements, brighter coliours were chosen to make them stand out more against the plain background styling.
+
+hex code colours are as follows:
+
+green:76c16c
+purple:3d2481
+red:d15a49
+blue:589bda
 
 ![Button](/static/color_theme/button_theme.png)
 
