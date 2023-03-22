@@ -9,24 +9,24 @@ Our Recipes Store is an online resource to give anyone with an interest in cooki
 
 [UX](#ux)
 
-- [Goals](#goals)
+[Goals](#goals)
     - Project Goals
     - Visitor Goals
-- [User Stories](#user-stories)
-- [Design Choices](#design-choices)
-- [Wireframes](#wireframes)
+[User Stories](#user-stories)
+[Design Choices](#design-choices)
+[Wireframes](#wireframes)
 
 [Features](#features)
    - Current Features
    - Future Goals
 
 [Technology Used](#technology-used)
- - Languages(#languages)
- - Tools(#tools)
+ - Languages
+ - Tools
  
 [Information Architecture](#information-architecture)
-    - Account Data
-    - Recipe Data
+   - Account Data
+   - Recipe Data
 
 [Testing](#testing)
 
@@ -34,10 +34,10 @@ Our Recipes Store is an online resource to give anyone with an interest in cooki
 
 [Navigation](#navigation)
 
- - [Add a Recipe](#add-a-recipe)
- - [Edit a Recipe](#edit-a-recipe)
- - [Delete a Recipe](#delete-a-recipe)
- - [Recipe Instructions](#recipe-instructions)
+ - Add a Recipe
+ - Edit a Recipe
+ - Delete a Recipe
+ - Recipe Instructions
 
 [Deployment](#deployment)
 
@@ -64,7 +64,7 @@ Our Recipes Store is an online resource to give anyone with an interest in cooki
 
 ---
 
-## User Stories
+### User Stories
 
 - As a vistor to the site I would like to be able to share my favourite recipes
 - As a vistor to the site I want to be able to view all my recipes in one place
@@ -75,7 +75,7 @@ Our Recipes Store is an online resource to give anyone with an interest in cooki
 
 ---
 
-## Design Choices
+### Design Choices
 
 **Fonts, Colours and Styling**
 
@@ -91,7 +91,7 @@ When viewed on mobile the site uses the Hamburger icon collapsible menu to allow
 
 ---
 
-## Wireframes
+### Wireframes
 
 - Our Recipes Store Desktop Homepage
 - Mobile Site
@@ -108,7 +108,7 @@ When viewed on mobile the site uses the Hamburger icon collapsible menu to allow
 
 ---
 
-## Features
+### Features
 
 **Current Features**
 
@@ -135,15 +135,15 @@ When viewed on mobile the site uses the Hamburger icon collapsible menu to allow
     - Create a wildcard 'Inspire Me!' recipe option
 
 ---
-## Technology Used
+### Technology Used
 
-### Languages
+**Languages**
 - HTML
 - CSS
 - Javascript
 - Python
 
-### Tools
+**Tools**
 - MongoDB (https://www.mongodb.com/)
 - Materialize (https://materializecss.com/)
 - Flask (https://flask.palletsprojects.com/en/2.2.x/) 
@@ -153,9 +153,9 @@ When viewed on mobile the site uses the Hamburger icon collapsible menu to allow
 
 ---
 
-## Information Architecture
+### Information Architecture
 
-#### Account Data
+**Account Data**
 
 | Title         | Key In Database | Form Validation | Data Type |
 |---------------|-----------------|-----------------|-----------|
@@ -163,7 +163,7 @@ When viewed on mobile the site uses the Hamburger icon collapsible menu to allow
 | Name          | username        | Text            | string    |
 | Password      | password        | Text            | string    |
 
-#### Recipe Data
+**Recipe Data**
 
 | Title                  | Key In Database        | Form Validation | Data Type |
 |------------------------|------------------------|-----------------|-----------|
@@ -213,26 +213,26 @@ During CSS verification, two errors occurred. These were traced to an issue with
 - Footer links displayed for Facebook and Instagram. Both links navigate to sites. Additional code required to ensure they open in new web pages
 - Copyright is not a link and is not set to be one
 
-### Add a Recipe
+**Add a Recipe**
 
 - Link from navbar correctly directs logged in user to create a recipe
 - Info required for uploading recipe info displays as required
 - Info is sent to database on MongoDB
 
-### Edit a Recipe
+**Edit a Recipe**
 
 - Logged in user is able to see their recipes on profile and on main recipes page and can click through to edit page
 - Current info held about recipe is retrieved from MongoDB
 - User is able to amend recipe and submit corrections to MongoDB
 
-### Delete a Recipe
+**Delete a Recipe**
 
 - Logged in user is able to see their recipes on profile and on main recipes page and can click through to edit page
 - User is able to delete recipe 
 - Confirmation is required to delete
 - Recipe is deleted from MongoDB and user's profile
 
-### Recipe Instructions
+**Recipe Instructions**
 
 - All users are able to click link from main page to view recipe instructions
 - Large image is correctly displayed to users on navigating to page
@@ -242,7 +242,7 @@ During CSS verification, two errors occurred. These were traced to an issue with
 
 ## Responsive Design
 
-### Mobile, Tablet and Desktop
+**Mobile, Tablet and Desktop**
 
 All aspects working correctly across all sized screens. Tested on Chrome and Safari.
 
