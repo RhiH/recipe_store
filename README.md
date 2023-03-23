@@ -315,6 +315,8 @@ All aspects working correctly across all sized screens. Tested on Chrome and Saf
 * Cause: currently unknown as previous fix remains and was working prior.
 * Additional testing required, as ongoing issue. May be resolved by using a different formatting tool eg Bootstrap.
 
+---
+
 ## Deployment
 
 **How to the run this project locally**
