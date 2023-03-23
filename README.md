@@ -69,9 +69,9 @@ Our Recipes Store is an online resource to give anyone with an interest in cooki
 
 ### User Stories
 
-- As a vistor to the site I would like to be able to share my favourite recipes
-- As a vistor to the site I want to be able to view all my recipes in one place
-- As a visitor to the site I want to be able to create, edit and delete my recipes
+- As a logged in user to the site I would like to be able to share my favourite recipes
+- As a logged in user to the site I want to be able to view all my recipes in one place
+- As a logged in user to the site I want to be able to create, edit and delete my recipes
 - As a visitor to the site I want to be able to see all the recipes available at a glance
 - As a vistor to the site I want to be able to click on individual recipes without needing to log in
 - As a visitor to the site I want to be able to see the recipes on my mobile phone
@@ -254,6 +254,13 @@ During CSS verification, two errors occurred. These were traced to an issue with
 - Info is correctly displayed for all stages of recipe
 - Info about who uploaded the recipe is correctly displayed
 - User cannot amend the recipe from this page even if logged in
+
+**User Testing**
+Live testing revealed it was possible to add, amend and delete recipes for logged in users, however issues occured with formatting the recipe ingredients and method. Also on occasion the url upload failed despite being previously fixed. The field was uploading as a null into MongoDB, despite a previous fix being applied which was successful at an earlier point. 
+
+The formatting of recipe cards was changed on more than one occasion as functionality which had previously displayed successfully, was becoming problematic. This has now been improved and has led to a cleaner site look, which is more appealing.
+
+The site meets all the criteria in the user stories, however improvements to the site could continue to be made to improve the overall functionality before any future goals regarding monetization would begin.
 
 ## Responsive Design
 
