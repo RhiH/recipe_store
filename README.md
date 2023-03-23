@@ -202,6 +202,14 @@ When viewed on mobile the site uses the Hamburger icon collapsible menu to allow
 
 During CSS verification, two errors occurred. These were traced to an issue with Materialize and therefore are not currently fixable unless the site is changed from using Materialize to another tool - eg Bootstrap.
 
+**User Testing**
+
+Live testing revealed it was possible to add, amend and delete recipes for logged in users, however issues occured with formatting the recipe ingredients and method. Also on occasion the url upload failed despite being previously fixed. The field was uploading as a null into MongoDB, despite a previous fix being applied which was successful at an earlier point. 
+
+The formatting of recipe cards was changed on more than one occasion as functionality which had previously displayed successfully, was becoming problematic. This has now been improved and has led to a cleaner site look, which is more appealing.
+
+The site meets all the criteria in the user stories, however improvements to the site could continue to be made to improve the overall functionality before any future goals regarding monetization would begin.
+
 ## UI
 
 ### Navigation
@@ -255,12 +263,7 @@ During CSS verification, two errors occurred. These were traced to an issue with
 - Info about who uploaded the recipe is correctly displayed
 - User cannot amend the recipe from this page even if logged in
 
-**User Testing**
-Live testing revealed it was possible to add, amend and delete recipes for logged in users, however issues occured with formatting the recipe ingredients and method. Also on occasion the url upload failed despite being previously fixed. The field was uploading as a null into MongoDB, despite a previous fix being applied which was successful at an earlier point. 
-
-The formatting of recipe cards was changed on more than one occasion as functionality which had previously displayed successfully, was becoming problematic. This has now been improved and has led to a cleaner site look, which is more appealing.
-
-The site meets all the criteria in the user stories, however improvements to the site could continue to be made to improve the overall functionality before any future goals regarding monetization would begin.
+---
 
 ## Responsive Design
 
