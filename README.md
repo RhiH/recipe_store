@@ -301,6 +301,9 @@ All aspects working correctly across all sized screens. Tested on Chrome and Saf
 * Cause: Users able to log in by copying and pasting other user's id
 * Resolution: Functionality added to check if user attempting to access the page is the correct logged in user 
 ---
+* Problem: url link not working when entered via add recipe page.
+* Cause: currently unknown as previous fix remains and was working prior.
+* Additional testing required, as ongoing issue. May be resolved by using a different formatting tool eg Bootstrap.
 
 ## Deployment
 

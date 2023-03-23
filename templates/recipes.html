@@ -26,7 +26,7 @@
   <div class="col s6 m8 center-align">
     <div class="card">
       <div class="card-image">
-        <img class="responsive-img" src="{{ recipe.url_uploaded }}" alt="recipe image">
+        <img src="{{ recipe.url_uploaded }}" alt="recipe image">
       </div>
       <div class="card-action">
         <a href="{{ url_for('show_recipe', recipe_id=recipe._id) }}">{{ recipe.recipe_name}}</a>
